@@ -7,52 +7,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Strona główna -->
-    <div class="container">
-        <!-- Linia pozioma -->
-        <hr class="line-one">
-        <hr class="line-two">
-        <hr class="line-three">
+    <!-- Nawigacja -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo_sklepu.png" alt="Logo Sklepu" class="logo-nav">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Strona Główna</a></li>
+            <li><a href="#categories">Kategorie</a></li>
+            <li><a href="#products">Produkty</a></li>
+            <li><a href="#about">O Nas</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
 
-        <!-- Nagłówek sklepu -->
-        <header>
-            <h1>Nazwa Sklepu Sportowego</h1>
-        </header>
+    <!-- Nagłówek główny -->
+    <header class="main-header">
+        <h1>Sklep Sportowy - Zrób Ruch W Swoim Życiu!</h1>
+        <p>Znajdź najlepszy sprzęt sportowy, który pomoże Ci osiągnąć wyższy poziom.</p>
+        <a href="#products" class="cta-button">Zobacz Produkty</a>
+    </header>
 
-        <!-- Sekcja opisu sklepu -->
-        <section class="description">
-            <div class="text-left">
-                <p>Test opisu sklepu (obok logo)</p>
+    <!-- Kategorie produktów -->
+    <section id="categories" class="categories-section">
+        <h2>Kategorie Produktów</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="kategoria1.jpg" alt="Piłka nożna">
+                <h3>Piłka Nożna</h3>
+                <p>Od sprzętu po odzież - znajdziesz wszystko, czego potrzebujesz na boisku.</p>
             </div>
-            <div class="logo">
-                <img src="logo.png" alt="LOGO" />
+            <div class="category-item">
+                <img src="kategoria2.jpg" alt="Tenis">
+                <h3>Tenis</h3>
+                <p>Profesjonalne rakiety, piłki i akcesoria dla każdego tenisisty.</p>
             </div>
-            <div class="text-right">
-                <p>Test opisu sklepu</p>
+            <div class="category-item">
+                <img src="kategoria3.jpg" alt="Bieganie">
+                <h3>Bieganie</h3>
+                <p>Buty do biegania, odzież sportowa i technologie dla biegaczy.</p>
             </div>
-        </section>
+            <div class="category-item">
+                <img src="kategoria4.jpg" alt="Siłownia i fitness">
+                <h3>Siłownia i Fitness</h3>
+                <p>Od sprzętu fitness po odzież treningową – przygotuj się na sukces!</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Dodatkowy opis pod logo -->
-        <section class="additional-description">
-            <p>Test opisu sklepu (obok logo)</p>
-        </section>
+    <!-- Sekcja produktów -->
+    <section id="products" class="products-section">
+        <h2>Nasze Najlepsze Produkty</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="buty_sportowe.jpg" alt="Buty Sportowe">
+                <h3>Buty Sportowe</h3>
+                <p>Idealne do biegania i treningów. Cena: 299 zł</p>
+                <button class="buy-button">Kup teraz</button>
+            </div>
+            <div class="product">
+                <img src="pilka_nozna.jpg" alt="Piłka Nożna">
+                <h3>Piłka Nożna</h3>
+                <p>Doskonała do gry na boisku. Cena: 99 zł</p>
+                <button class="buy-button">Kup teraz</button>
+            </div>
+            <div class="product">
+                <img src="rakieta_tenisowa.jpg" alt="Rakieta Tenisowa">
+                <h3>Rakieta Tenisowa</h3>
+                <p>Profesjonalna rakieta do tenisa. Cena: 499 zł</p>
+                <button class="buy-button">Kup teraz</button>
+            </div>
+            <div class="product">
+                <img src="odziez_sportowa.jpg" alt="Odzież Sportowa">
+                <h3>Odzież Sportowa</h3>
+                <p>Wygodna i funkcjonalna odzież na każdą okazję. Cena: 199 zł</p>
+                <button class="buy-button">Kup teraz</button>
+            </div>
+        </div>
+    </section>
 
-        <!-- Sekcja wyliczeń -->
-        <section class="calculations">
-            <h2>Wyliczenia (co najmniej 5 pozycji):</h2>
-            <ul>
-                <li>Produkt 1 - Cena</li>
-                <li>Produkt 2 - Cena</li>
-                <li>Produkt 3 - Cena</li>
-                <li>Produkt 4 - Cena</li>
-                <li>Produkt 5 - Cena</li>
-            </ul>
-        </section>
+    <!-- Sekcja O Nas -->
+    <section id="about" class="about-section">
+        <h2>O Nas</h2>
+        <p>W Sklepie Sportowym dbamy o Twoje potrzeby sportowe. Jesteśmy dumni z tego, że dostarczamy najlepszej jakości sprzęt i odzież dla wszystkich miłośników aktywności fizycznej. Nasz zespół składa się z ekspertów, którzy pomagają klientom wybrać idealne produkty do ich dyscypliny sportowej.</p>
+        <img src="sklep.jpg" alt="Sklep Sportowy" class="about-image">
+    </section>
 
-        <!-- Link do strony menu -->
-        <footer>
-            <a href="menu.html">Link do strony menu</a>
-        </footer>
-    </div>
+    <!-- Sekcja Opinie -->
+    <section id="reviews" class="reviews-section">
+        <h2>Opinie Klientów</h2>
+        <div class="review">
+            <p>"Świetny sklep! Bardzo szeroki wybór sprzętu i super szybka dostawa. Gorąco polecam!"</p>
+            <span>- Anna K.</span>
+        </div>
+        <div class="review">
+            <p>"Kupiłem tutaj buty do biegania i jestem bardzo zadowolony. Obsługa klienta była bardzo pomocna."</p>
+            <span>- Tomasz W.</span>
+        </div>
+        <div class="review">
+            <p>"Najlepszy sklep sportowy, w którym robiłam zakupy. Sprzęt do siłowni pierwsza klasa."</p>
+            <span>- Katarzyna Z.</span>
+        </div>
+    </section>
+
+    <!-- Sekcja Newsletter -->
+    <section id="newsletter" class="newsletter-section">
+        <h2>Zapisz się do naszego newslettera</h2>
+        <p>Nie przegap najlepszych promocji i nowości. Zapisz się na nasz newsletter!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Wpisz swój email" required>
+            <button type="submit">Zapisz się</button>
+        </form>
+    </section>
+
+    <!-- Sekcja kontaktowa -->
+    <section id="contact" class="contact-section">
+        <h2>Kontakt</h2>
+        <p>Masz pytania? Skontaktuj się z nami:</p>
+        <ul>
+            <li>Email: kontakt@sklepsportowy.pl</li>
+            <li>Telefon: 123 456 789</li>
+            <li>Adres: Ul. Sportowa 10, 00-123 Warszawa</li>
+        </ul>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2024 Sklep Sportowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
