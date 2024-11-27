@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="pl-PL">
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title> ZADANIE FORMULARZ </title>
+ </head>
+<body bgcolor="#E0FFFF">
+<center><h1> formularz zgłoszeniowy do składania komputerów</h1></center>
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
+    <table>
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="imie" size="22"></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="drugie" size="22"></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="nazwisko" size="22"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Imię</b></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Drugie imię</b></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Nazwisko</b></td>
+        </tr>
+      </table>      
+<table>
+  <table>
+    <tr>
+      <td style="width: 500px; font-size: 18px;">Jakie są Twoje umiejętności techniczne?</td>
+      <td style="font-size: 18px;">Na jakim poziomie oceniasz swoją znajomość komponentów komputerowych?</td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="techniczne" value="a"> Montaż komponentów komputerowych<br>
+        <input type="checkbox" name="techniczne" value="b"> Instalacje systemów operacyjnych<br>
+        <input type="checkbox" name="techniczne" value="c"> Diagnoza i rozwiązywanie problemów sprzętowych
+      </td>
+      <td>
+        <input type="checkbox" name="komputerowych" value="e"> Podstawowy<br>
+        <input type="checkbox" name="komputerowych" value="f"> Średnio zaawansowany<br>
+        <input type="checkbox" name="komputerowych" value="g"> Zaawansowany
+      </td>
+    </tr>
+  </table>
+     <br>
+     <table>
+      <tr>
+        <td style="width: 500px; font-size: 18px;">Jakie są Twoje umiejętności techniczne?</td>
+        <td style="font-size: 18px;">Na jakim poziomie oceniasz swoją znajomość komponentów komputerowych?</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="techniczne" value="a"> Montaż komponentów komputerowych<br>
+          <input type="checkbox" name="techniczne" value="b"> Instalacje systemów operacyjnych<br>
+          <input type="checkbox" name="techniczne" value="c"> Diagnoza i rozwiązywanie problemów sprzętowych<br>
+          <input type="checkbox" name="techniczne" value="d"> Przeprowadzenie testów wydajności komputera
+        </td>
+        <td>
+          <input type="checkbox" name="komputerowych" value="e"> Podstawowy<br>
+          <input type="checkbox" name="komputerowych" value="f"> Średnio zaawansowany<br>
+          <input type="checkbox" name="komputerowych" value="g"> Zaawansowany<br>
+          <input type="checkbox" name="komputerowych" value="h"> Ekspert
+        </td>
+      </tr>
+    </table>
+  </table>
+  <br>
+  <table>
+    <tr><td style="width: 1000px; font-size: 18px;"><center>Czy masz doświadczenie z różnymi typami obudów i systemów chłodzenia</center></td></tr>
+    <td>
+      <center><input type="radio" name="systemw" value="a"> Zdecydowanie Tak
+      <input type="radio" name="systemw" value="a"> Tak
+      <input type="radio" name="systemw" value="a"> Nie
+      <input type="radio" name="systemw" value="a"> Zdecydowanie Nie</center>
+    </td>
+    </table>
+        <br>
+        <table>
+          <tr>
+            <td style="width: 500px; font-size: 18px;">Czy jesteś zainteresowany pracą na pełen etat, pół etatu, czy współpracą projektową?</td>
+            <td style="font-size: 18px;">Jakie typy systemów chłodzenia znasz i montowałeś/aś wcześniej?</td>
+          </tr>
+          <td>
+            <center> <select>
+              <option value="Pełen">Pełen etat</option>
+              <option value="Pół">Pół etatu</option>
+              <option value="Współpraca">Współpraca projektowa</option>
+              </select> </center>
+          </td>
+          <td>
+            <center> <select>
+              <option value="powietrzem">Chłodzenie powietrzem</option>
+              <option value="wodne(AIO)">Chłodzenie wodne(AIO)</option>
+              <option value="Niestandardowe">Niestandardowe chłodzenie wodne</option>
+              </select> </center>
+          </td>
+        </table>
+        <br>
+        <table>
+          <tr>
+            <td style="width: 500px; font-size: 18px;">Dlaczgo uważasz, że właśnie Ciebie powinniśmy wybrać?</td>
+            <td style="font-size: 18px;">Hasło do formularza:</td>
+          </tr>
+          <td>
+            <textarea cols="50" rows="4"></textarea> 
+          </td>
+          <td>
+            <input type="password"
+          </td>
+        </table>
+        <br>
+        <TR height="100">
+          <TD>
+              <input type="reset" value="Reset" style="height:80px; width:150px; margin-right:190px;">
+          </TD>
+          <TD>
+              <input type="submit" value="Submit" style="height:80px; width:150px;">
+          </TD>
+      </TR>
+    </form>
+    </body>
+    </html>
+    
