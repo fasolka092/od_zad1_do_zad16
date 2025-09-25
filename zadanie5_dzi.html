@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Dziewulski 3G</title>
+</head>
+
+<script>
+    function okno_zamknij_dziewulski(){
+        window.close()
+    }
+
+    function WinOpen_dziewulski_1(){
+        window.open("grafika1.html","okienko_grafika1","toolbar=no,directories=no,menubar=no,height=400,width=260,top=300,left=100");
+    }
+    
+    function WinOpen_dziewulski_2(){
+        window.open("grafika2.html","okienko_grafika2","toolbar=no,directories=no,menubar=no,height=400,width=260,top=200,left=370");
+    }
+    
+    function WinOpen_dziewulski_3(){
+        window.open("grafika3.html","okienko_grafika3","toolbar=no,directories=no,menubar=no,menubar=no,height=400,width=260,top=100,left=640");
+    }
+    
+    function WinOpen_dziewulski_4(){
+        window.open("grafika4.html","okienko_grafika4","toolbar=no,directories=no,menubar=no,height=400,width=260,top=0,left=910");
+    }
+</script>
+<body>
+    <p style="font-size: 1cm; color: red; font-weight: bold; text-align: center;">wykonał: Dominik Dziewulski mój numer w dzienniku 7, czyli mam układ [(7) mod 4=3] układ 3</p>
+    <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_dziewulski_1()"/>
+    <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_dziewulski_2()"/>
+    <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_dziewulski_3()"/>
+    <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_dziewulski_4()"/>
+
+    <br><br><br><input type="button" value="zamknij okno" onclick="okno_zamknij_dziewulski()"/>
+</body>
+</html>
