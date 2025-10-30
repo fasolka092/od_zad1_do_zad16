@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<div style="color:green;font-size:50px;">
+<script language="JavaScript">
+var m_dzi = prompt("Podaj pierwszą liczbę A =", "");
+var n_dzi = prompt("Podaj drugą liczbę B =", "");
+
+var a_dzi = parseFloat(m_dzi);
+var b_dzi = parseFloat(n_dzi);
+
+var c_dzi = a_dzi * a_dzi * a_dzi;
+var d_dzi = 3 * a_dzi * a_dzi * b_dzi;
+var e_dzi = 3 * a_dzi * b_dzi * b_dzi;
+var f_dzi = b_dzi * b_dzi * b_dzi;
+var o_dzi = c_dzi + d_dzi + e_dzi + f_dzi;
+
+document.write("(" + a_dzi + " + " + b_dzi + ")^3 = " +a_dzi + "^3 + 3*((" + a_dzi + ")^2)*(" + b_dzi + ") + 3*(" + a_dzi + ")*((" + b_dzi + ")^2) + " +b_dzi + "^3 = " + c_dzi + " + " + d_dzi + " + " + e_dzi + " + " + f_dzi + " = " + o_dzi + "<br>");
+</script>
+</div>
+</body>
+</html>
