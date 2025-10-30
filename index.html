@@ -90,5 +90,44 @@ window.open("z11_kod.html","okienko_z11_kod","toolbar=no,directories=no,menubar=
  </form> 
 </body> 
 </html>
+#include <iostream>
+#include <cmath>    // dla sqrt() i pow()
+
+using namespace std;
+
+int main() {
+    const int size = 20;     // rozmiar tablicy (np. 20x20)
+    const double r = size / 2.0 - 1; // promień koła
+    const double cx = size / 2.0;    // środek X
+    const double cy = size / 2.0;    // środek Y
+
+    char tab[size][size];
+
+    // wypełnij tablicę spacjami
+    for (int y = 0; y < size; y++) {
+        for (int x = 0; x < size; x++) {
+            double dx = x - cx;
+            double dy = y - cy;
+            double dist = sqrt(dx * dx + dy * dy);
+
+            // jeśli odległość od środka jest bliska promieniowi — rysuj '*'
+            if (fabs(dist - r) < 0.5)
+                tab[y][x] = '*';
+            else
+                tab[y][x] = ' ';
+        }
+    }
+
+    // wyświetl koło
+    for (int y = 0; y < size; y++) {
+        for (int x = 0; x < size; x++) {
+            cout << tab[y][x];
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
 
 
